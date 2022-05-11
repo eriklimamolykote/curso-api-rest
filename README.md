@@ -9,13 +9,13 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 *NPM versão 6.4.15 ou superior
 
--package.json:
+* *package.json:
 
-_eslint 8.15.0 ou superior
+* *eslint 8.15.0 ou superior
 
-_eslint-config-airbnb-base 15.0.0 ou superior
+* *eslint-config-airbnb-base 15.0.0 ou superior
 
-_eslint-plugin-import 2.26.0 ou superior
+* *eslint-plugin-import 2.26.0 ou superior
 
 -Executando:
 
