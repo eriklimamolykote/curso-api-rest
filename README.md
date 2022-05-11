@@ -5,11 +5,11 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 -Pré-requisitos:
 
-*NodeJS versão 14.18.0 ou superior
+* NodeJS versão 14.18.0 ou superior
 
-*NPM versão 6.4.15 ou superior
+* NPM versão 6.4.15 ou superior
 
-* package.json:
+-package.json:
 
 * eslint 8.15.0 ou superior
 
