@@ -23,6 +23,8 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * express versão 4.16.4 (somente esta versão!) 
 
+* body-parser versão 1.18.3 (somente esta versão!)
+
 -Executando:
 
 * Modifique o arquivo "package.json" acrescentando, na sessão "scripts", a linha ' "test": "jest" '
