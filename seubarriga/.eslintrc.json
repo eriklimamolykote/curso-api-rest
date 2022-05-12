@@ -1,5 +1,6 @@
 {
     "env": {
+        "jest": true,
         "browser": true,
         "es2021": true,
         "node": true
@@ -10,5 +11,6 @@
         "sourceType": "module"
     },
     "rules": {
+        "arrow-body-style": "off"
     }
 }
