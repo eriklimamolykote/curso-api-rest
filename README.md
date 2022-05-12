@@ -17,6 +17,8 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * eslint-plugin-import 2.26.0 ou superior
 
+* jest versão 23.6.0 (somente esta versão!)
+
 -Executando:
 
 Abra um prompt de comando (Windows) ou um terminal (Linux) e acesse a pasta "seubarriga". Em seguida, 
