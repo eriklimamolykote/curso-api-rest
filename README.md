@@ -29,3 +29,5 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * Abra um prompt de comando (Windows) ou um terminal (Linux) e acesse a pasta "seubarriga". Em seguida, 
 digite o comando "npm test" e aguarde até o final da execução dos testes.
+
+* Para executá-los em modo seguro, digite "npm run secure-mode"
