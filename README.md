@@ -19,7 +19,11 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * jest versão 23.6.0 (somente esta versão!)
 
+* supertest versão 3.3.0 (somente esta versão!)
+
 -Executando:
 
-Abra um prompt de comando (Windows) ou um terminal (Linux) e acesse a pasta "seubarriga". Em seguida, 
-digite o comando "eslint src/** test/** --fix" e aguarde
+* Modifique o arquivo "package.json" acrescentando, na sessão "scripts", a linha ' "test": "jest" '
+
+* Abra um prompt de comando (Windows) ou um terminal (Linux) e acesse a pasta "seubarriga". Em seguida, 
+digite o comando "npm test" e aguarde até o final da execução dos testes.
