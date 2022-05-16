@@ -27,6 +27,12 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * consign versão 0.1.6 (somente esta versão!) 
 
+* knex versão 2.0.0 ou superior
+
+* knex-logger 0.10 ou superior 
+
+* postgres (pg) versão 8.7.3 ou superior
+
 -Executando:
 
 * Modifique o arquivo "package.json" acrescentando, na sessão "scripts", a linha ' "test": "jest" '
