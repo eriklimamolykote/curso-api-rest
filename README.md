@@ -27,6 +27,8 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * consign versão 0.1.6 (somente esta versão!) 
 
+* knex 0.15.2 (somente esta versão!) 
+
 -Executando:
 
 * Modifique o arquivo "package.json" acrescentando, na sessão "scripts", a linha ' "test": "jest" '
