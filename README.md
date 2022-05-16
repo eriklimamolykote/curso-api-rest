@@ -29,6 +29,8 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * knex versão 2.0.0 ou superior
 
+* knex-logger 0.10 ou superior 
+
 * postgres (pg) versão 8.7.3 ou superior
 
 -Executando:
