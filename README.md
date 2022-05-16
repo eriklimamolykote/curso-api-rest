@@ -29,6 +29,8 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * knex 0.15.2 (somente esta versão!) 
 
+* postgres (pg) 7.7.1 (somente esta versão!) 
+
 -Executando:
 
 * Modifique o arquivo "package.json" acrescentando, na sessão "scripts", a linha ' "test": "jest" '
