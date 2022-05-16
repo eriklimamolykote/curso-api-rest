@@ -27,9 +27,9 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * consign versão 0.1.6 (somente esta versão!) 
 
-* knex 0.15.2 (somente esta versão!) 
+* knex versão 2.0.0 ou superior
 
-* postgres (pg) 7.7.1 (somente esta versão!) 
+* postgres (pg) versão 8.7.3 ou superior
 
 -Executando:
 
