@@ -33,6 +33,8 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * postgres (pg) versão 8.7.3 ou superior
 
+* bcrypt-nodejs versão 0.0.3 (seomente esta versão!) 
+
 -Executando:
 
 * Modifique o arquivo "package.json" acrescentando, na sessão "scripts", a linha ' "test": "jest" '
