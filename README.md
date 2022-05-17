@@ -37,6 +37,10 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * jwt-simple versão 0.5.5 (somente esta versão!) 
 
+* passport versão 0.4.0 (somente esta versão!)
+
+* passport-jwt 4.0.0 (somente esta versão!)  
+
 -Executando:
 
 * Modifique o arquivo "package.json" acrescentando, na sessão "scripts", a linha ' "test": "jest" '
