@@ -10,6 +10,12 @@ const knexfile = require( '../knexfile' );
 // TODO criar chaveamento dinâmico
 app.db = knex( knexfile.test );
 
+// app.get( '/users', ( req, res, next ) => {
+//     // res.status( 200 ).send( 'Crackeado por Molykote!' );
+//     console.log( 'Passei aqui' );
+//     next();
+// });
+
 // app.use( knexLogger( app.db ) );
 
 consign( { cwd: 'src', verbose: false } )
@@ -21,11 +27,24 @@ consign( { cwd: 'src', verbose: false } )
 
 app.get( '/', ( req, res ) => {
     res.status( 200 ).send();
-} );
+});
+
+// app.use( ( req, res ) => {
+//     // console.log( 'e aqui tb' );
+//     res.status( 404 ).send( 'Não conheço essa requisição' );
+// });
 
 // app.db.on( 'query', ( query ) => {
 //     console.log( { sql: query.sql, bindings: query.bindings ? query.bindings.join( ',' ) : '' } );
 // }).on( 'query-response', response => console.log( response ) )
 //     .on( 'error', error => console.log( error ) );
+
+app.use( ( err, req, res, next ) => {
+    const { name, message, stack } = err;
+
+    if ( name === 'ValidationError' ) res.status( 400 ).json( { error: message } );
+    else res.status( 500 ).json( { name, message, stack } );
+    next( err );
+});
 
 module.exports = app;
