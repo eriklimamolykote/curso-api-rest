@@ -33,7 +33,9 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * postgres (pg) versão 8.7.3 ou superior
 
-* bcrypt-nodejs versão 0.0.3 (seomente esta versão!) 
+* bcrypt-nodejs versão 0.0.3 (somente esta versão!) 
+
+* jwt-simple versão 0.5.5 (somente esta versão!) 
 
 -Executando:
 
