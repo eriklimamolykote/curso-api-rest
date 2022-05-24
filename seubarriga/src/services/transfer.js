@@ -28,8 +28,6 @@ module.exports = ( app ) => {
     };
 
     const save = async ( transfer ) => {
-        await validate( transfer );
-        
         const result = await app.db( 'transfers' ).insert( transfer, '*' );
         const transferId = result[ 0 ].id;
 
@@ -43,15 +41,13 @@ module.exports = ( app ) => {
     };
 
     const update = async ( id, transfer ) => {
-        await validate( transfer );
-
         const result = await app.db( 'transfers' )
             .where( { id } )
             .update( transfer, '*' );
 
         const transactions = [
-            { description: `Transfer to acc #${transfer.acc_dest_id}`, date: transfer.date, ammount: transfer.ammount * -1, type: 'O', acc_id: transfer.acc_ori_id, transfer_id: id },
-            { description: `Transfer from acc #${transfer.acc_ori_id}`, date: transfer.date, ammount: transfer.ammount, type: 'I', acc_id: transfer.acc_dest_id, transfer_id: id },
+            { description: `Transfer to acc #${transfer.acc_dest_id}`, date: transfer.date, ammount: transfer.ammount * -1, type: 'O', acc_id: transfer.acc_ori_id, transfer_id: id, status: true },
+            { description: `Transfer from acc #${transfer.acc_ori_id}`, date: transfer.date, ammount: transfer.ammount, type: 'I', acc_id: transfer.acc_dest_id, transfer_id: id, status: true },
         ];
         
         await app.db( 'transactions' ).where( { transfer_id: id } ).del();
@@ -59,5 +55,10 @@ module.exports = ( app ) => {
         return result;
     };
 
-    return { find, save, findOne, update };
+    const remove = async ( id ) => {
+        await app.db( 'transactions' ).where( { transfer_id: id } ).del();
+        await app.db( 'transfers' ).where( { id } ).del();
+    };
+
+    return { find, save, findOne, update, validate, remove };
 };
