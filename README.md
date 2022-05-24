@@ -39,7 +39,9 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * passport versão 0.4.0 (somente esta versão!)
 
-* passport-jwt 4.0.0 (somente esta versão!)  
+* passport-jwt versão 4.0.0 (somente esta versão!)  
+
+* moment versão 2.22.2 (somente esta versão!) 
 
 -Executando:
 
