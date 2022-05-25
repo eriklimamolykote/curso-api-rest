@@ -51,6 +51,8 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * winston versão 3.1.0 ou superior
 
+* cors versão 2.8.5 (somente esta versão!)
+
 -Executando:
 
 * Modifique o arquivo "package.json" acrescentando, na sessão "scripts", a linha ' "test": "jest" '
