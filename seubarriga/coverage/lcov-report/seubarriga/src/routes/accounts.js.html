@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for seubarriga/src/routes/accounts.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">seubarriga/src/routes</a> accounts.js
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const res = require("express/lib/response");
+const express = require( 'express' );
+&nbsp;
+const RecursoIndevidoError = require( '../errors/RecursoIndevidoError' )
+&nbsp;
+module.exports = ( app ) =&gt; {
+    const router = express.Router();
+&nbsp;
+    router.param( 'id', <span class="fstat-no" title="function not covered" >( </span>req, res, next ) =&gt; {
+<span class="cstat-no" title="statement not covered" >        app.services.account.find( { id: req.params.id } )</span>
+            .then( <span class="fstat-no" title="function not covered" >( </span>acc ) =&gt; {
+<span class="cstat-no" title="statement not covered" >                if ( acc.user_id != req.user.id) <span class="cstat-no" title="statement not covered" >throw new RecursoIndevidoError();</span></span>
+                else <span class="cstat-no" title="statement not covered" >next();</span>
+            }).catch( <span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >next( err ) </span>);
+    });
+&nbsp;
+    // const create = ( req, res, next ) =&gt; {
+    //     app.services.account.save( req.body )
+    //         .then( ( result ) =&gt; {
+    //             // if ( result.error ) return res.status( 400 ).json( result );
+    //             return res.status( 201 ).json( result[ 0 ] );
+    //     }).catch( err =&gt; next( err ) );
+    // };
+&nbsp;
+    router.post( '/',  <span class="fstat-no" title="function not covered" >( </span>req, res, next ) =&gt; {
+<span class="cstat-no" title="statement not covered" >        app.services.account.save( { ...req.body, user_id: req.user.id } )</span>
+            .then( <span class="fstat-no" title="function not covered" >( </span>result ) =&gt; {
+                // if ( result.error ) return res.status( 400 ).json( result );
+<span class="cstat-no" title="statement not covered" >                return res.status( 201 ).json( result[ 0 ] );</span>
+        }).catch( <span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >next( err ) </span>);
+    });
+&nbsp;
+    // const getAll = ( req, res, next ) =&gt; {
+    //     app.services.account.findAll()
+    //         .then( result =&gt; res.status( 200 ).json( result ) )
+    //         .catch( err =&gt; next( err ) );
+    //             // next(); 
+    // };
+&nbsp;
+    router.get( '/', <span class="fstat-no" title="function not covered" >( </span>req, res, next ) =&gt; {
+        // app.services.account.findAll()
+<span class="cstat-no" title="statement not covered" >        app.services.account.findAll( req.user.id )</span>
+            .then( <span class="fstat-no" title="function not covered" >re</span>sult =&gt; <span class="cstat-no" title="statement not covered" >res.status( 200 ).json( result ) </span>)
+            .catch( <span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >next( err ) </span>);
+                // next(); 
+    });
+&nbsp;
+    // const get = ( req, res, next ) =&gt; {
+    //     // console.log( req.body );
+    //     // console.log( req.params );
+    //     // console.log( req.query );
+    //     app.services.account.find( { id: req.params.id } )
+    //         .then( result =&gt; res.status( 200 ).json( result ) )
+    //         .catch( err =&gt; next( err ) );
+    // };
+&nbsp;
+    // router.get( '/:id',  ( req, res, next ) =&gt; {
+    //     // console.log( req.body );
+    //     // console.log( req.params );
+    //     // console.log( req.query );
+    //     app.services.account.find( { id: req.params.id } )
+    //         // .then( result =&gt; res.status( 200 ).json( result ) )
+    //         .then( ( result ) =&gt; {
+    //             if ( result.user_id != req.user.id )
+    //                 return res.status( 403 ).json( { error: 'Este recurso não pertence ao usuário' } );
+    //             return res.status( 200 ).json( result )
+    //         })
+    //         .catch( err =&gt; next( err ) );
+    // });
+&nbsp;
+    router.get( '/:id',  <span class="fstat-no" title="function not covered" >( </span>req, res, next ) =&gt; {
+<span class="cstat-no" title="statement not covered" >        app.services.account.find( { id: req.params.id } )</span>
+            .then( <span class="fstat-no" title="function not covered" >re</span>sult =&gt; <span class="cstat-no" title="statement not covered" >res.status( 200 ).json( result ) </span>)
+            .catch( <span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >next( err ) </span>);
+    });
+&nbsp;
+    // const update = ( req, res, next ) =&gt; {
+    //     app.services.account.update( req.params.id, req.body )
+    //         .then( result =&gt; res.status( 200 ).json( result[ 0 ] ) )
+    //         .catch( err =&gt; next( err ) );
+    // };
+&nbsp;
+    router.put( '/:id',  <span class="fstat-no" title="function not covered" >( </span>req, res, next ) =&gt; {
+<span class="cstat-no" title="statement not covered" >        app.services.account.update( req.params.id, req.body )</span>
+            .then( <span class="fstat-no" title="function not covered" >re</span>sult =&gt; <span class="cstat-no" title="statement not covered" >res.status( 200 ).json( result[ 0 ] ) </span>)
+            .catch( <span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >next( err ) </span>);
+    });
+&nbsp;
+    // const remove = ( req, res, next ) =&gt; {
+    //     app.services.account.remove( req.params.id )
+    //         .then( () =&gt; res.status( 204 ).send() )
+    //         .catch( err =&gt; next( err ) );
+    // };
+&nbsp;
+    router.delete( '/:id', <span class="fstat-no" title="function not covered" >( </span>req, res, next ) =&gt; {
+<span class="cstat-no" title="statement not covered" >        app.services.account.remove( req.params.id )</span>
+            .then( <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >res.status( 204 ).send() </span>)
+            .catch( <span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >next( err ) </span>);
+    });
+&nbsp;
+    // return { 
+    //     create, getAll, get, update, remove,
+    // };
+&nbsp;
+    return router;
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed May 25 2022 09:49:44 GMT-0300 (Horário Padrão de Brasília)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

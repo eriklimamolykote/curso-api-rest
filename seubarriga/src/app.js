@@ -8,7 +8,7 @@ const knexfile = require( '../knexfile' );
 // const knexLogger = require( 'knex-logger' );
 
 // TODO criar chaveamento dinâmico
-app.db = knex( knexfile.test );
+app.db = knex( knexfile [ process.env.NODE_ENV ] );
 
 // app.get( '/users', ( req, res, next ) => {
 //     // res.status( 200 ).send( 'Crackeado por Molykote!' );
