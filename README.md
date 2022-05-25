@@ -43,6 +43,8 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * moment versão 2.22.2 ou superior
 
+* husky versão 1.2.8 ou superior 
+
 -Executando:
 
 * Modifique o arquivo "package.json" acrescentando, na sessão "scripts", a linha ' "test": "jest" '
