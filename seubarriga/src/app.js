@@ -4,11 +4,25 @@
 const app = require( 'express' )();
 const consign = require( 'consign' );
 const knex = require( 'knex' );
+const winston = require( 'winston' );
+const uuid = require( 'uuidv4' );
+
 const knexfile = require( '../knexfile' );
 // const knexLogger = require( 'knex-logger' );
 
-// TODO criar chaveamento dinâmico
 app.db = knex( knexfile [ process.env.NODE_ENV ] );
+
+app.log = winston.createLogger( {
+    level: 'debug',
+    transports: [
+        new winston.transports.Console( { format: winston.format.json( { space: 1 } ) } ),
+        new winston.transports.File( { 
+            filename: 'logs/error.log', 
+            level: 'warn', 
+            format: winston.format.combine( winston.format.timestamp(), winston.format.json( { space: 1 } ) ),
+        }),
+    ],
+})
 
 // app.get( '/users', ( req, res, next ) => {
 //     // res.status( 200 ).send( 'Crackeado por Molykote!' );
@@ -28,6 +42,7 @@ consign( { cwd: 'src', verbose: false } )
     .into( app );
 
 app.get( '/', ( req, res ) => {
+    app.log.debug( 'passei aqui' );
     res.status( 200 ).send();
 });
 
@@ -47,8 +62,11 @@ app.use( ( err, req, res, next ) => {
     if ( name === 'ValidationError' ) res.status( 400 ).json( { error: message } );
     else if ( name === 'RecursoIndevidoError' ) res.status( 400 ).json( { error: message } );
     else {
-        console.log( message );
-        res.status( 500 ).json( { name, message, stack } );
+        const id = uuid();
+        // console.log( message );
+        app.log.error( { id, name, message, stack } );
+        // res.status( 500 ).json( { name, message, stack } );
+        res.status( 500 ).json( { id, error: 'Falha interna' } );
     }
     next( err );
 });
