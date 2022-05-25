@@ -9,6 +9,8 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * NPM versão 6.4.15 ou superior
 
+* PM2 versão 5.2.0 ou superior 
+
 -package.json:
 
 * eslint 8.15.0 ou superior
