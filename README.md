@@ -45,6 +45,10 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * husky versão 1.2.8 ou superior 
 
+* uuidv4 versão 2.0.0 ou superior
+
+* winston versão 3.1.0 ou superior
+
 -Executando:
 
 * Modifique o arquivo "package.json" acrescentando, na sessão "scripts", a linha ' "test": "jest" '
