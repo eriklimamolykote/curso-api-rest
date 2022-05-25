@@ -9,6 +9,8 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 
 * NPM versão 6.4.15 ou superior
 
+* PM2 versão 5.2.0 ou superior 
+
 -package.json:
 
 * eslint 8.15.0 ou superior
@@ -44,6 +46,12 @@ Repositório com minhas respostas para os exercícios de um curso sobre API Rest
 * moment versão 2.22.2 ou superior
 
 * husky versão 1.2.8 ou superior 
+
+* uuidv4 versão 2.0.0 ou superior
+
+* winston versão 3.1.0 ou superior
+
+* cors versão 2.8.5 (somente esta versão!)
 
 -Executando:
 
