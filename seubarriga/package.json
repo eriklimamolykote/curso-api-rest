@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
-    "body-parser": "2.3.0",
+    "body-parser": "2.4.0",
     "consign": "0.1.6",
     "cors": "2.8.5",
     "express": "5.2.1",
